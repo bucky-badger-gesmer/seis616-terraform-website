@@ -1,0 +1,8 @@
+# Terraform working directory and state (state holds sensitive values)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+.terraform.tfstate.lock.info
