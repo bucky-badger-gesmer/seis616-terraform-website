@@ -170,7 +170,7 @@ resource "aws_security_group" "db" {
 
 resource "aws_vpc_security_group_ingress_rule" "db_mysql_from_web" {
   security_group_id            = aws_security_group.db.id
-  description                  = "MySQL from the web servers' security group only"
+  description                  = "MySQL from the web server security group only"
   ip_protocol                  = "tcp"
   from_port                    = 3306
   to_port                      = 3306
